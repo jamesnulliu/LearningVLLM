@@ -1,0 +1,45 @@
+facebook/opt-125m Generated Outputs:
+------------------------------------------------------------
+Prompt:    'Hello, my name is'
+Output:    ' Joel, I am a 4yo, I am very ready to learn, I'
+------------------------------------------------------------
+Prompt:    'The president of the United States is'
+Output:    ' engaged in a war on foreign enemies, trying to exert pressure on them to accept'
+------------------------------------------------------------
+Prompt:    'The capital of France is'
+Output:    ' a magnificent country. The capital of the world is a magnificent country. But if'
+------------------------------------------------------------
+Prompt:    'The future of AI is'
+Output:    ' different, but the future is looking very promising.\nSo are you saying the'
+
+
+
+QWEn/QWEn2.5-1.5B Generated Outputs:
+------------------------------------------------------------
+Prompt:    'Hello, my name is'
+Output:    ' Kaila. I am 16 years old, and I am a'
+------------------------------------------------------------
+Prompt:    'The president of the United States is'
+Output:    ' not only the Commander-in-Chief of the Armed Forces of the United States,'
+------------------------------------------------------------
+Prompt:    'The capital of France is'
+Output:    ' Paris.\nA. 错误\nB. 正确\n答案:\n'
+------------------------------------------------------------
+Prompt:    'The future of AI is'
+Output:    ' now. The first generation of artificial intelligence is now kicking in, taking the place'
+------------------------------------------------------------
+
+
+Qwen/Qwen3-1.7b Generated Outputs:
+------------------------------------------------------------
+Prompt:    'Hello, my name is'
+Output:    ' K. I have a laptop and want to start a business. I have no'
+------------------------------------------------------------
+Prompt:    'The president of the United States is'
+Output:    ' a president of the United States, and the president of the United States is a'
+------------------------------------------------------------
+Prompt:    'The capital of France is'
+Output:    ' Paris.\nA. Correct\nB. Incorrect\nAnswer:\nA\n\nWhat is'
+------------------------------------------------------------
+Prompt:    'The future of AI is'
+Output:    ' now: The first global report on AI in the workplace\n\nThe first global report'
