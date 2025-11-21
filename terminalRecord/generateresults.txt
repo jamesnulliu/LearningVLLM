@@ -1,0 +1,12 @@
+--------------------------------------------------
+Prompt: 'Hello, my name is'
+Generated text: " Katelyn, and I'm 16 years old. I have a"
+--------------------------------------------------
+Prompt: 'The president of the United States is'
+Generated text: ' a president of the United States, and the president of the United States is a'
+--------------------------------------------------
+Prompt: 'The capital of France is'
+Generated text: ' Paris. The capital of Italy is Rome. The capital of Spain is Madrid.'
+--------------------------------------------------
+Prompt: 'The future of AI is'
+Generated text: ' now: The first global AI summit in the US is set to be held in'
