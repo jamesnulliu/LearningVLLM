@@ -19,13 +19,11 @@ sampling_params = SamplingParams(temperature=0.8, top_p=0.95)
 
 
 # def main():
-#     # Create an LLM.
+
 #     llm = LLM(model="Qwen/Qwen3-1.7b", gpu_memory_utilization=0.8,max_model_len=10000)
-#     # Generate texts from the prompts.
-#     # The output is a list of RequestOutput objects
-#     # that contain the prompt, generated text, and other information.
+
 #     outputs = llm.generate(prompts, sampling_params)
-#     # Print the outputs.
+
 #     print("\nGenerated Outputs:\n" + "-" * 60)
 #     for output in outputs:
 #         prompt = output.prompt
@@ -43,13 +41,19 @@ def main():
     tokenizer=AutoTokenizer.from_pretrained("Qwen/Qwen3-1.7b",trust_remote_code=True)
     conversations = [
         [
+            {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": "Hello, my name is"}
         ],
         [
+            {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": "The president of the United States is"}
-        ],        [
+        ],        
+        [
+            {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": "What is the capital of France?"}
-        ],        [
+        ],        
+        [
+            {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": "The future of AI is"}
         ]
     ]
@@ -57,7 +61,7 @@ def main():
         tokenizer.apply_chat_template(
             convo,
             tokenize=False,       
-            add_generation_prompt=True
+            add_generation_prompt=True   #Because there is <|im_end|>, add generation prompt must be added regardless of whether it is a supplementary sentence or not.
         )
         for convo in conversations
     ]
@@ -70,6 +74,7 @@ def main():
     for output in outputs:
         print(f"Generated: {output.outputs[0].text}")
         print("-" * 50)
+        print("\n")
 
    
 
