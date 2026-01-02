@@ -6,6 +6,10 @@ from vllm import LLM, SamplingParams
 
 from transformers import AutoTokenizer
 
+# from learning_vllm.utils.common import test1
+from .utils.common import test1 # . means current directory: directory where contains basic.py  
+# in a import b, in b import a will cause circular import error
+
 
 # Sample prompts.
 prompts = [
